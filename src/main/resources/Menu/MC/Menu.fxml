@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.MC.Controller">
+   <children>
+      <ImageView fitHeight="499.0" fitWidth="852.0" layoutX="-4.0" layoutY="-7.0" onMouseMoved="#setLeaderboard" pickOnBounds="true">
+         <image>
+            <Image url="@../../assets/led.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="278.0" layoutY="106.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="Snake Game" wrappingWidth="309.13671875">
+         <font>
+            <Font name="Bell MT" size="56.0" />
+         </font>
+      </Text>
+      <Button layoutX="173.0" layoutY="385.0" mnemonicParsing="false" onAction="#startGame" prefHeight="25.0" prefWidth="131.0" text="START GAME" />
+      <Button fx:id="exit" layoutX="480.0" layoutY="385.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="25.0" prefWidth="131.0" text="EXIT" />
+      <RadioButton layoutX="138.0" layoutY="169.0" mnemonicParsing="false" onAction="#changeTheme" text="Toggle Dark Theme" textFill="WHITE" />
+      <RadioButton layoutX="136.0" layoutY="206.0" mnemonicParsing="false" onAction="#setLudicrous" text="Ludicrous tunes" textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="136.0" layoutY="229.0" mnemonicParsing="false" onAction="#setMediocre" text="Mediocre tunes" textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="135.0" layoutY="253.0" mnemonicParsing="false" onAction="#setRelaxation" text="Relaxation tunes" textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="m_nameEntry" layoutX="326.0" layoutY="325.0" prefHeight="25.0" prefWidth="131.0" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="464.0" layoutY="324.0" mnemonicParsing="false" onAction="#setName" text="Set" />
+      <RadioButton layoutX="136.0" layoutY="294.0" mnemonicParsing="false" onAction="#setDefaultSnake" text="Default Snake" textFill="WHITE" />
+      <RadioButton layoutX="136.0" layoutY="317.0" mnemonicParsing="false" onAction="#setSquareSnake" text="Square Snake" textFill="WHITE" />
+      <Text fx:id="m_welcomeMessage" fill="WHITE" layoutX="338.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="346.0" layoutY="157.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" text="Hall of Fame:" underline="true" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_leaderboard4" fill="WHITE" layoutX="346.0" layoutY="241.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_leaderboard2" fill="WHITE" layoutX="346.0" layoutY="202.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_leaderboard3" fill="WHITE" layoutX="346.0" layoutY="221.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_leaderboard1" fill="WHITE" layoutX="346.0" layoutY="182.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_leaderboard5" fill="WHITE" layoutX="346.0" layoutY="262.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.5" wrappingWidth="138.13671875">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="537.0" layoutY="162.0" mnemonicParsing="false" onAction="#setLevel1" text="Level 1 (easy)" textFill="WHITE" />
+      <RadioButton layoutX="537.0" layoutY="184.0" mnemonicParsing="false" onAction="#setLevel2" text="Level 2 (medium)" textFill="WHITE" />
+      <RadioButton layoutX="537.0" layoutY="205.0" mnemonicParsing="false" onAction="#setLevel3" text="Level 3 (hard)" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="535.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custom Background">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="m_customBackgroundField" layoutX="536.0" layoutY="248.0" prefHeight="25.0" prefWidth="131.0" />
+      <Button layoutX="672.0" layoutY="248.0" mnemonicParsing="false" onAction="#setCustomBackground" text="Set" />
+      <Text fill="WHITE" layoutX="537.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter name of background image">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_invalidFileMessage" fill="WHITE" layoutX="534.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="310.458984375">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="535.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score Multiplier">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="m_scoreMultiplierField" layoutX="534.0" layoutY="336.0" prefHeight="25.0" prefWidth="131.0" />
+      <Button layoutX="671.0" layoutY="336.0" mnemonicParsing="false" onAction="#setMultiplier" text="Set" />
+      <Text fx:id="m_invalidMultiplier" fill="WHITE" layoutX="534.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="310.458984375">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

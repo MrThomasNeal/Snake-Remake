@@ -1,0 +1,6 @@
+package Game.MVC;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ViewTest {
+}
